@@ -190,6 +190,8 @@ func New(config *rest.Config, opt Options) (*Operator, error) {
 }
 
 func (op *Operator) Configure() error {
+	log.Infoln("configuring kubed ...")
+
 	op.lock.Lock()
 	defer op.lock.Unlock()
 
