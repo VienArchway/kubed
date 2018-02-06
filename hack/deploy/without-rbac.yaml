@@ -16,8 +16,8 @@ spec:
     spec:
       containers:
       - name: kubed
-        image: appscode/kubed:0.5.0
-        imagePullPolicy: IfNotPresent
+        image: appscode/kubed:api
+        imagePullPolicy: Always
         args:
         - run
         - --v=3
